@@ -9,6 +9,7 @@ import ContainerFc from './Container_fc';
 import { HelloWorldAf } from './HelloWorld_af';
 import ContainerFcWithChild from './Container_fc_with_child';
 import { ContainerAfcWithChild } from './Container_afc_with_child';
+import ContainerCc_old from './Container_old';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <HelloWorldFc who="Selvyn"/>
         <HelloWorldCc2 who="Selvyn2"/>
         <ContainerCc/>
+        <ContainerCc_old/>
         <ContainerFc/>
         <HelloWorldAf who="Selvyn"/>
         <ContainerFcWithChild/>
