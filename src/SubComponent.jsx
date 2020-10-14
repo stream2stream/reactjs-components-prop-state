@@ -5,7 +5,7 @@ function SubComponent(props) {
     const msg = props.msg;
     return (
         <div onClick={() => {
-            eventHandler();
+            eventHandler(1, 2);
         }}>
             <h1>{msg}</h1>    
         </div>

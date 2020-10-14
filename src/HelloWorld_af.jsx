@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export const HelloWorldAf = (props) => {
     const greeting = "greeting";
@@ -10,6 +11,14 @@ export const HelloWorldAf = (props) => {
         </div>
         </div>
     )
+}
+
+HelloWorldAf.defaultProps = {
+    who: "unassigned"
+}
+
+HelloWorldAf.propTypes = {
+    who: PropTypes.string.isRequired
 }
 
 

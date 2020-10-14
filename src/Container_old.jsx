@@ -5,12 +5,14 @@ export default class ContainerCc_old extends Component {
     {
         super();
         this.message = "Value: ";
-        this.state = {containerState: 0};
+        this.state = {containerState: 0,
+                      userName: "empty"};
     }
 
     handleEvent()
     {
-        this.setState( {containerState : this.state.containerState + 1} );
+        this.setState( {containerState : this.state.containerState + 1,
+                    userName: this.state.userName} );
     }
 
     render() {

@@ -7,7 +7,7 @@ export const ContainerAfcWithChild = () =>{
 
         return (
             <div>
-                <h2>[afc]{message}{containerState} 
+                <h2>[afc_wc]{message}{containerState} 
                     <SubComponent msg="AFC CLICK ME" evh={() => {
                         setcontainerState(containerState + 2);
                     }}/>
