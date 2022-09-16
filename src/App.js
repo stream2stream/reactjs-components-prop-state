@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import HelloWorldCc from './HelloWorld_cc';
 import HelloWorldFc from './HelloWorld_fc';
 import HelloWorldCc2 from './HelloWorld_cc2';
 import ContainerCc from './Container';
-import ContainerFc from './Container_fc';
+import ContainerFc from './ContainerFc';
 import { HelloWorldAf } from './HelloWorld_af';
 import ContainerFcWithChild from './Container_fc_with_child';
 import { ContainerAfcWithChild } from './Container_afc_with_child';
 import ContainerCc_old from './Container_old';
+import ContainerFcWLambdas from './ContainerFcWLambdas';
+import ContainerFcWuE from './ContainerFcWuE';
+
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -33,6 +37,8 @@ function App() {
         <ContainerCc/>
         <ContainerCc_old/>
         <ContainerFc/>
+        <ContainerFcWLambdas/>
+        <ContainerFcWuE/>
         <HelloWorldAf who="Selvyn"/>
         <ContainerFcWithChild/>
         <ContainerAfcWithChild/>

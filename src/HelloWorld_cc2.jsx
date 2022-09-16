@@ -8,6 +8,15 @@ export default class HelloWorldCc2 extends React.Component {
         // In this example props is available here
         this._who = props.who;
     }
+
+    setDocTitle(title)
+    {
+        document.title = title;
+    }
+    componentDidMount()
+    {
+        this.setDocTitle(`App ${this._who}`);
+    }
     render()
     {
         // props are available here
