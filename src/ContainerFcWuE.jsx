@@ -12,13 +12,26 @@ function getTheTime()
 export default function ContainerFcWuE(){
     const [simpleField, setSimpleField] = useState('');
     const [containerState, setContainerState] = useState([getTheTime()]);
+    /* Without these two lines below, this code will not work as expected
+     * The problem is, every time a state field changes the function is
+     * is re-executed in it's entirety, so the state fields are completely
+     * reset.  I know I was suprised by this fact!
+     * 
+     * useRef allows you to create a mutable value that does not cause a 
+     * re-render when it is changed.
+     * 
+     * If you remove containerRef and containerRef.current and replace
+     * containerRef.current with containerState, you will see the problem.
+     * 
+     * A description of this problem and a solution can be found at
+     * https://stackoverflow.com/questions/56511176/state-being-reset
+     */
     const containerRef = useRef([]);
     containerRef.current = containerState;
     const addToList = name => {
         console.log(`Current array: ${containerRef.current}`);
         const update = [...containerRef.current, name];
-        //let update = [...containerRef.current];
-        //update.push(name);
+
         console.log(`Updated array: ${update}`);
   
         setContainerState(update);
