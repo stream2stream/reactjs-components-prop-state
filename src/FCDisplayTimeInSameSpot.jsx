@@ -12,7 +12,7 @@ export default function FCDisplayTimeInSameSpot(){
     const [containerState, setContainerState] = useState([getTheTime()]);
   
     const getDisplayData = () => {
-        const cdata = <p>{containerState}</p>
+        const cdata = containerState
         return cdata;
     }
 
@@ -35,7 +35,7 @@ export default function FCDisplayTimeInSameSpot(){
 
     return (
         <>
-            Time is: {getDisplayData()}
+            <p>Time is - {getDisplayData()}</p>
         </>
     )
 }
