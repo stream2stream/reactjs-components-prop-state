@@ -29,10 +29,10 @@ export default function ContainerFcWuE(){
     const containerRef = useRef([]);
     containerRef.current = containerState;
     const addToList = name => {
-        console.log(`Current array: ${containerRef.current}`);
+       console.log(`Current array: ${containerRef.current}`);
         const update = [...containerRef.current, name];
 
-        console.log(`Updated array: ${update}`);
+       console.log(`Updated array: ${update}`);
   
         setContainerState(update);
     }

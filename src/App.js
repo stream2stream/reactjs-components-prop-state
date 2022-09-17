@@ -15,6 +15,7 @@ import FCDisplayTimeInSameSpot from './FCDisplayTimeInSameSpot';
 
 
 function App() {
+  const switchComponents = true;
 
   return (
     <div className="App">
@@ -27,8 +28,11 @@ function App() {
         <ContainerCc_old/>
         <ContainerFc/>
         <ContainerFcWLambdas/>
-        <FCDisplayTimeInSameSpot/>
-        <ContainerFcWuE/>
+        {switchComponents ? 
+            <FCDisplayTimeInSameSpot/>
+            :
+            <ContainerFcWuE/>
+        }
         <ContainerFcWithChild/>
         <ContainerAfcWithChild/>
       </header>
