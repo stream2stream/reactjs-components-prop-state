@@ -66,7 +66,7 @@ export default function ContainerFcWuE(){
 
     // This useEffect will run every time the component is unmounted
     useEffect(() =>{
-        return ()=>console.log("unmounting the widget");
+        return ()=>console.log("unmounting the ContainerFcWuE");
     });
 
     return (

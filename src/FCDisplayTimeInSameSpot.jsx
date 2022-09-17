@@ -28,9 +28,14 @@ export default function FCDisplayTimeInSameSpot(){
         console.log(getDisplayData())
     })
 
+    // This useEffect will run every time the component is mounted
+    useEffect(() =>{
+        return ()=>console.log("mounting the FCDisplayTimeInSameSpot");
+    }, []);
+
     // This useEffect will run every time the component is unmounted
     useEffect(() =>{
-        return ()=>console.log("unmounting the widget");
+        return ()=>console.log("unmounting the FCDisplayTimeInSameSpot");
     });
 
     return (

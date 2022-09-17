@@ -22,7 +22,7 @@ export default function ContainerFcWLambdas(){
     }
 
     // Observe the output in the browser console
-    console.log("Here I am...");
+    console.log("Here I am in ContainerFcWLambdas");
     // It's printed twice because <React.StrictMode> has been enabled 
     // in index.js
     // <React.StrictMode> https://reactjs.org/docs/strict-mode.html
