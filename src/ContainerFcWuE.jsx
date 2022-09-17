@@ -47,20 +47,24 @@ export default function ContainerFcWuE(){
         return cdata;
     }
 
+    // This useEffect will only run once when the compone is mounted
     useEffect(()=>{
         setInterval(()=>{
             addTimeToList()
         }, 10000);
     }, [])
 
+    // This useEffect will run every time the component changes
     useEffect(() =>{
         console.log(getDisplayData())
     })
 
+    // This useEffect will run every time the simpleField changes
     useEffect(() =>{
         console.log(simpleField);
     }, [simpleField]);
 
+    // This useEffect will run every time the component is unmounted
     useEffect(() =>{
         return ()=>console.log("unmounting the widget");
     });
