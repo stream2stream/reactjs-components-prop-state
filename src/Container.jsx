@@ -11,7 +11,6 @@ export default class ContainerCc extends Component {
         return (
             <div onClick={() => 
             {
-                //this.state.containerState = this.containerState + 1;
                 this.setState( {containerState : this.state.containerState + 1} );
             }}>
                 <h2>[cc]{this.message}{this.state.containerState}</h2>

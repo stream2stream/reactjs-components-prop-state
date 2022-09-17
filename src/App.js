@@ -19,27 +19,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <HelloWorldCc who="Selvyn"/>
-        <HelloWorldFc who="Selvyn"/>
-        <HelloWorldCc2 who="Selvyn2"/>
+        <HelloWorldCc who="Selvyn 1"/>
+        <HelloWorldFc who="Selvyn 2"/>
+        <HelloWorldCc2 who="Selvyn 3"/>
+        <HelloWorldAf who="Selvyn 4"/>
         <ContainerCc/>
         <ContainerCc_old/>
         <ContainerFc/>
         <ContainerFcWLambdas/>
         <ContainerFcWuE/>
-        <HelloWorldAf who="Selvyn"/>
         <ContainerFcWithChild/>
         <ContainerAfcWithChild/>
       </header>

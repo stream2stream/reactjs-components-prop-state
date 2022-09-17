@@ -71,9 +71,9 @@ export default function ContainerFcWuE(){
 
     return (
         <>
-            <input type='text' value={simpleField} onChange={(e) => setSimpleField(e.target.value)} />
+            Type something (open dev tools/console to see behaviour)<input type='text' value={simpleField} onChange={(e) => setSimpleField(e.target.value)} />
             <div onClick={e => setSimpleField("YYY")}>
-                <h2>[ue] Click Me</h2>
+                <h2>[fcwue] Click Me</h2>
             </div>
             <ul>{getDisplayData()}</ul>
         </>
