@@ -1,15 +1,6 @@
 import React, { useState } from 'react'
-import { useEffect } from 'react';
-
-function getTheTime()
-{
-    let currentDate = new Date();
-    let currentTime = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
-    return currentTime;
-}
 
 export default function ContainerFc(){
-    const message = "Value: ";
     const [containerState, setContainerState] = useState([]);
     const addToList = name => {
         const update = [...containerState, name];

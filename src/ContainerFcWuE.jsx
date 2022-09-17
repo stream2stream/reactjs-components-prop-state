@@ -54,7 +54,7 @@ export default function ContainerFcWuE(){
         }, 10000);
     }, [])
 
-    // This useEffect will run every time the component changes
+    // This useEffect will run every time the component re-renders
     useEffect(() =>{
         console.log(getDisplayData())
     })

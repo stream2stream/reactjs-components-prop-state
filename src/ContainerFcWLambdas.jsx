@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { useEffect } from 'react';
 
 function getTheTime()
 {
@@ -9,7 +8,6 @@ function getTheTime()
 }
 
 export default function ContainerFcWLambdas(){
-    const message = "Value: ";
     const [containerState, setContainerState] = useState([]);
 
     const addToList = name => {

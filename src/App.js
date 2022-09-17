@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import HelloWorldCc from './HelloWorld_cc';
 import HelloWorldFc from './HelloWorld_fc';
@@ -12,6 +11,7 @@ import { ContainerAfcWithChild } from './Container_afc_with_child';
 import ContainerCc_old from './Container_old';
 import ContainerFcWLambdas from './ContainerFcWLambdas';
 import ContainerFcWuE from './ContainerFcWuE';
+import FCDisplayTimeInSameSpot from './FCDisplayTimeInSameSpot';
 
 
 function App() {
@@ -27,6 +27,7 @@ function App() {
         <ContainerCc_old/>
         <ContainerFc/>
         <ContainerFcWLambdas/>
+        <FCDisplayTimeInSameSpot/>
         <ContainerFcWuE/>
         <ContainerFcWithChild/>
         <ContainerAfcWithChild/>
