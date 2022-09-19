@@ -11,7 +11,7 @@ function getTheTime()
 export default function FCDisplayTimeInSameSpot(){
     console.log("Executing FCDisplayTimeInSameSpot()");
 
-    const [containerState, setContainerState] = useState([getTheTime()]);
+    const [containerState, setContainerState] = useState(["<NO TIME SET>"]);
   
     const getDisplayData = () => {
         const cdata = containerState
@@ -21,8 +21,9 @@ export default function FCDisplayTimeInSameSpot(){
     // This useEffect will only run once when the component is first mounted
     useEffect(()=>{
         setInterval(()=>{
+            const timeStamp = containerState;
             setContainerState(getTheTime());
-        }, 10000);
+        }, 30000);
     }, [])
 
     // This useEffect will run every time the component re-renders
